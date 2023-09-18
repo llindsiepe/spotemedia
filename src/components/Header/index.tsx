@@ -1,28 +1,22 @@
-import Link from "next/link";
-
 import { Container, Organize, OptionsMenu, ButtonLogin } from "./styles";
-import { useRef } from "react";
 
-export default function Header( props: {handleClick: any, aboutHandleClick: any, meetingHandleClick: any, contactHandleClick: any}) {
-  const ref = useRef(null); 
-
+export default function Header( props: {handleClickAnchor: any, about: any, services: any, meeting: any, contact: any} ) {
   return (
     <Container>
       <Organize>
       <img src="/logotipo.svg" alt="Logotipo Spotemedia" />
 
       <OptionsMenu>
-        <button onClick={props.aboutHandleClick}>
+        <button onClick={() => {props.handleClickAnchor(props.about)}}>
           <h5>About us</h5>
         </button>
-
-        <button onClick={props.handleClick}>
+        <button onClick={() => {props.handleClickAnchor(props.services)}}>
           <h5>Our services</h5>
         </button>
-        <button onClick={props.meetingHandleClick}>
+        <button onClick={() => {props.handleClickAnchor(props.meeting)}}>
           <h5>Meeting</h5>
         </button>
-        <button onClick={props.contactHandleClick}>
+        <button onClick={() => {props.handleClickAnchor(props.contact)}}>
           <h5>Contact</h5>
         </button>
       </OptionsMenu>

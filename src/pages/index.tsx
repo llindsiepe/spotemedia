@@ -12,26 +12,17 @@ import Footer from "../components/Footer"
 export default function Home() {
   const form = useRef();
 
-  const about = useRef(null); 
+  const about = useRef(null);
   const services = useRef(null); 
-  const meeting = useRef(null); 
+  const meeting = useRef(null);
   const contact = useRef(null); 
 
-
-  const aboutHandleClick = () => {
-    about.current?.scrollIntoView({behavior: 'smooth'})
-  };
-  const handleClick = () => {
-    services.current?.scrollIntoView({behavior: 'smooth'})
-  };
-  const meetingHandleClick = () => {
-    meeting.current?.scrollIntoView({behavior: 'smooth'})
-  };
-  const contactHandleClick = () => {
-    contact.current?.scrollIntoView({behavior: 'smooth'})
+  const handleClickAnchor = (ref: any) => {
+    //@ts-ignore
+    ref.current?.scrollIntoView({behavior: 'smooth'})
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
 
     emailjs
@@ -56,7 +47,7 @@ export default function Home() {
 
   return (
     <Container>
-      <Header handleClick={handleClick} aboutHandleClick={aboutHandleClick} meetingHandleClick={meetingHandleClick} contactHandleClick={contactHandleClick} />
+      <Header handleClickAnchor={handleClickAnchor} about={about} services={services} meeting={meeting} contact={contact} />
 
       <BannerHome ref={about}>
         <TextBanner>
@@ -193,7 +184,7 @@ export default function Home() {
           <button type="submit">Send!</button>
         </FormsTalking>
       </Talking>
-      <Footer handleClick={handleClick} aboutHandleClick={aboutHandleClick} meetingHandleClick={meetingHandleClick} contactHandleClick={contactHandleClick} />
+      <Footer handleClickAnchor={handleClickAnchor} about={about} services={services} meeting={meeting} contact={contact} />
     </Container>
   );
 }

@@ -1,6 +1,6 @@
 import { Container, ButtonLogin, OptionLogin, Platform, Line, OptionsFooter, About, ServicesAnchors, ContactUs, InfoContact, Options } from "./styles";
 
-export default function Footer(props: {handleClick: any, aboutHandleClick: any, meetingHandleClick: any, contactHandleClick: any}) {
+export default function Footer(props: {handleClickAnchor: any, about: any, services: any, meeting: any, contact: any} ) {
     return (
       <Container>
         <Platform>
@@ -25,16 +25,16 @@ export default function Footer(props: {handleClick: any, aboutHandleClick: any, 
             <Options>
                 <ServicesAnchors>
                     <h5><b>Services</b></h5>
-                    <button onClick={props.aboutHandleClick}>
+                    <button onClick={() => {props.handleClickAnchor(props.about)}}>
                         <h5>About us</h5>
                     </button>
-                    <button onClick={props.handleClick}>
+                    <button onClick={() => {props.handleClickAnchor(props.services)}}>
                         <h5>Our services</h5>
                     </button>
-                    <button onClick={props.meetingHandleClick}>
+                    <button onClick={() => {props.handleClickAnchor(props.meeting)}}>
                         <h5>Meeting</h5>
                     </button>
-                    <button onClick={props.contactHandleClick}>
+                    <button onClick={() => {props.handleClickAnchor(props.contact)}}>
                         <h5>Contact Us</h5>
                     </button>
                 </ServicesAnchors>
