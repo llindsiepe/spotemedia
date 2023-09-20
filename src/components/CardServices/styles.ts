@@ -14,6 +14,10 @@ export const Container = styled.div`
     font-weight: 500;
     font-family: Montserrat;
     color: #373737;
+
+    @media (max-width: 720px) {
+      width: 22rem;
+    }
   }
 
   h5 {
@@ -26,7 +30,7 @@ export const Container = styled.div`
     margin-top: -1rem;
 
     @media (max-width: 720px) {
-      width: 26rem;
+      width: 22rem;
     }
   }
 `;

@@ -34,7 +34,7 @@ export const TitlePage = styled.div`
     color: #373737;
 
     @media (max-width: 720px) {
-      width: 26rem;
+      width: 22rem;
       font-size: 3rem;
     }
   }
@@ -52,13 +52,13 @@ export const TitlePage = styled.div`
     color: rgba(55, 55, 55, 0.6);
 
     @media (max-width: 720px) {
-      width: 26rem;
+      width: 22rem;
     }
   }
 
   img {
     @media (max-width: 720px) {
-      width: 24rem;
+      width: 20rem;
     }
   }
 `;
@@ -208,7 +208,7 @@ export const TextFunctions = styled.div`
     margin-top: 2rem;
     margin-left: 2rem;
 
-    width: 26rem;
+    width: 22rem;
   }
 `;
 
@@ -299,7 +299,7 @@ export const Talking = styled.div`
 
   @media (max-width: 720px) {
     display: inline-block;
-    height: 32rem;
+    height: 36rem;
   }
 `;
 
@@ -314,7 +314,7 @@ export const TextTalking = styled.div`
 
     @media (max-width: 720px) {
       font-size: 3rem;
-      width: 26rem;
+      width: 22rem;
     }
   }
 
@@ -327,7 +327,7 @@ export const TextTalking = styled.div`
     width: 28rem;
 
     @media (max-width: 720px) {
-      width: 24rem;
+      width: 20rem;
     }
   }
 `;
@@ -359,7 +359,7 @@ export const FormsTalking = styled.form`
     }
 
     @media (max-width: 720px) {
-      width: 22rem;
+      width: 18rem;
     }
   }
 
@@ -379,7 +379,7 @@ export const FormsTalking = styled.form`
     }
 
     @media (max-width: 720px) {
-      width: 24rem;
+      width: 20rem;
     }
   }
 `;

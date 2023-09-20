@@ -6,9 +6,9 @@ export default function CardServices(props: {icon: any, title: string, text: str
             <img src={props.icon} alt="Icon Services" />
         <Title>
             <h3>{props.title}</h3>
-            <TagServices>
+            {/* <TagServices>
                 <h5>See more</h5>
-            </TagServices>
+            </TagServices> */}
         </Title>
         <h5>{props.text}</h5>
       </Container>

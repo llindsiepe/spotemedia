@@ -69,7 +69,7 @@ export const Options = styled.div`
   gap: 12rem;
 
   @media (max-width: 720px) {
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 2rem;
   }
 `;
