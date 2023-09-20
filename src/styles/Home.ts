@@ -372,7 +372,7 @@ export const FormsTalking = styled.form`
     height: 2.4rem;
     border-radius: 0.5rem;
     background-color: white;
-    color: ##23194a;
+    color: #23194a;
 
     &:hover {
       cursor: pointer;

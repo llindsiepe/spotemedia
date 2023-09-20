@@ -69,7 +69,7 @@ export const Options = styled.div`
   gap: 12rem;
 
   @media (max-width: 720px) {
-    gap: 1rem;
+    gap: 0rem;
     margin-top: 2rem;
   }
 `;
@@ -104,6 +104,10 @@ export const ServicesAnchors = styled.div`
     h5 {
       margin-top: -1rem;
       font-weight: 500;
+
+      @media (max-width: 720px) {
+        color: #373737;
+      }
     }
 
     &:hover {

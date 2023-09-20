@@ -10,6 +10,10 @@ export const Container = styled.div`
     text-align: justify;
     font-family: Montserrat;
     font-weight: 500;
+
+    @media (max-width: 720px) {
+      max-width: 10rem;
+    }
   }
 
   h3 {

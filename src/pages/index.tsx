@@ -60,11 +60,11 @@ export default function Home() {
             We usually blend accuracy with persuasion to achieve exceptional results for ambitious brands.</h5>
           </TitlePage>
           <OptionsBanner>
-            <ButtonCTA>
+            <ButtonCTA onClick={() => {handleClickAnchor(meeting)}}>
               <h5>Schedule a meeting</h5>
               <img src="/arrow.svg" alt="skip" />
             </ButtonCTA>
-            <ButtonSecondary>
+            <ButtonSecondary onClick={() => {handleClickAnchor(contact)}}>
               <h5>Contact us</h5>
             </ButtonSecondary>
           </OptionsBanner>
@@ -169,7 +169,6 @@ export default function Home() {
           <Item name="Roy Leib." text="We work with sensitive content, it's hard to find suppliers who are so quick to deliver this type of content, so I can say that I'm very satisfied with the partnership so far."/>
         </Carousel>
 
-        {/* <CardRating name="Lohani L." text="Lorem ipsum dolor sit amet consectetur. Et condimentum condimentum orci facilisis id arcu gravida sit tortor. Lorem ipsum dolor sit amet consectetur."></CardRating> */}
       </Rating>
 
       <Talking ref={contact}>
@@ -189,6 +188,7 @@ export default function Home() {
           <button type="submit">Send!</button>
         </FormsTalking>
       </Talking>
+
       <Footer handleClickAnchor={handleClickAnchor} about={about} services={services} meeting={meeting} contact={contact} />
     </Container>
   );
