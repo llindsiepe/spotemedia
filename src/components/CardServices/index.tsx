@@ -7,7 +7,7 @@ export default function CardServices(props: {icon: any, title: string, text: str
         <Title>
             <h3>{props.title}</h3>
             <TagServices>
-                <h5>Functions</h5>
+                <h5>See more</h5>
             </TagServices>
         </Title>
         <h5>{props.text}</h5>

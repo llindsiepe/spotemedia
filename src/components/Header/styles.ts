@@ -7,6 +7,10 @@ export const Container = styled.div`
 
   img {
     width: 12rem;
+
+    @media (max-width: 720px) {
+      width: 8rem;
+    }
   }
 `;
 
@@ -36,6 +40,10 @@ export const OptionsMenu = styled.div`
       font-weight: 500;
     }
   }
+
+  @media (max-width: 720px) {
+    display: none;
+  }
 `;
 
 export const ButtonLogin = styled.button`
@@ -53,6 +61,10 @@ export const ButtonLogin = styled.button`
     margin-top: auto;
     margin-bottom: auto;
     font-family: Montserrat;
+
+    @media (max-width: 720px) {
+      color: #fff;
+    }
   }
 
   &:hover {
@@ -63,5 +75,9 @@ export const ButtonLogin = styled.button`
     h4 {
       color: white;
     }
+  }
+
+  @media (max-width: 720px) {
+    background: #23194a;
   }
 `;

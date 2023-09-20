@@ -11,12 +11,20 @@ export const BannerHome = styled.div`
   justify-content: space-between;
 
   margin-left: 2rem;
+
+  @media (max-width: 720px) {
+    display: inline-block;
+  }
 `;
 
 export const TextBanner = styled.div`
   width: 22rem;
   margin-top: 8rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 720px) {
+    margin-top: 6rem;
+  }
 `;
 
 export const TitlePage = styled.div`
@@ -26,7 +34,8 @@ export const TitlePage = styled.div`
     color: #373737;
 
     @media (max-width: 720px) {
-      font-size: 1.6rem;
+      width: 26rem;
+      font-size: 3rem;
     }
   }
 
@@ -41,6 +50,16 @@ export const TitlePage = styled.div`
     font-weight: 500;
     margin-top: -0.8rem;
     color: rgba(55, 55, 55, 0.6);
+
+    @media (max-width: 720px) {
+      width: 26rem;
+    }
+  }
+
+  img {
+    @media (max-width: 720px) {
+      width: 24rem;
+    }
   }
 `;
 
@@ -56,6 +75,10 @@ export const Markup = styled.div`
 export const OptionsBanner = styled.div`
   display: flex;
   gap: 1rem;
+
+  @media (max-width: 720px) {
+    margin-bottom: 4rem;
+  }
 `;
 
 export const ButtonCTA = styled.button`
@@ -120,7 +143,13 @@ export const ButtonSecondary = styled.button`
   }
 `;
 
-export const ImageBanner = styled.div``;
+export const ImageBanner = styled.div`
+  img {
+    @media (max-width: 720px) {
+      width: 24rem;
+    }
+  }
+`;
 
 export const BannerData = styled.div`
   background: #ffb800;
@@ -129,6 +158,17 @@ export const BannerData = styled.div`
   gap: 4rem;
 
   margin-bottom: 4rem;
+
+  @media (max-width: 720px) {
+    display: inline-block;
+    width: 100%;
+  }
+
+  img {
+    @media (max-width: 720px) {
+      display: none;
+    }
+  }
 `;
 
 export const DataInfo = styled.div`
@@ -154,11 +194,22 @@ export const DataInfo = styled.div`
 
 export const Functions = styled.div`
   display: flex;
+
+  @media (max-width: 720px) {
+    display: inline-block;
+  }
 `;
 
 export const TextFunctions = styled.div`
   width: 32rem;
   margin-top: 10rem;
+
+  @media (max-width: 720px) {
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    width: 26rem;
+  }
 `;
 
 export const Services = styled.div`
@@ -166,15 +217,30 @@ export const Services = styled.div`
   justify-content: space-between;
 
   margin-left: 2rem;
+
+  @media (max-width: 720px) {
+    display: inline-block;
+  }
 `;
 
 export const TextServices = styled.div`
   width: 32rem;
   margin-top: 5rem;
+
+  @media (max-width: 720px) {
+    width: 26rem;
+  }
 `;
 
 export const ImageServices = styled.div`
   margin-top: -10rem;
+
+  img {
+    @media (max-width: 720px) {
+      width: 24rem;
+      margin-top: 10rem;
+    }
+  }
 `;
 
 export const CardServicesGroup = styled.div`
@@ -185,6 +251,10 @@ export const CardServicesGroup = styled.div`
 export const Cards = styled.div`
   display: flex;
   gap: 12rem;
+
+  @media (max-width: 720px) {
+    display: inline-block;
+  }
 `;
 
 export const Meeting = styled.div`
@@ -196,17 +266,28 @@ export const Meeting = styled.div`
 `;
 
 export const TextMeeting = styled.div`
-  width: 32rem;
+  width: 40rem;
+
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const Rating = styled.div`
   margin-top: 12rem;
   margin-bottom: 8rem;
+
+  @media (max-width: 720px) {
+    margin-top: 6rem;
+  }
 `;
 
 export const TextRating = styled.div`
   text-align: center;
   margin-bottom: 4rem;
+
+  @media (max-width: 720px) {
+    margin-left: 2rem;
+  }
 `;
 
 export const Talking = styled.div`
@@ -215,6 +296,11 @@ export const Talking = styled.div`
   padding: 3rem;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 720px) {
+    display: inline-block;
+    height: 32rem;
+  }
 `;
 
 export const TextTalking = styled.div`
@@ -225,6 +311,11 @@ export const TextTalking = styled.div`
     font-size: 3.6rem;
 
     width: 32rem;
+
+    @media (max-width: 720px) {
+      font-size: 3rem;
+      width: 26rem;
+    }
   }
 
   h5 {
@@ -234,6 +325,10 @@ export const TextTalking = styled.div`
     font-weight: 400;
 
     width: 28rem;
+
+    @media (max-width: 720px) {
+      width: 24rem;
+    }
   }
 `;
 
@@ -262,6 +357,10 @@ export const FormsTalking = styled.form`
     &:focus {
       color: white;
     }
+
+    @media (max-width: 720px) {
+      width: 22rem;
+    }
   }
 
   button {
@@ -277,6 +376,10 @@ export const FormsTalking = styled.form`
 
     &:hover {
       cursor: pointer;
+    }
+
+    @media (max-width: 720px) {
+      width: 24rem;
     }
   }
 `;

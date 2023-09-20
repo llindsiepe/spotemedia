@@ -9,6 +9,8 @@ import { Carousel } from '@trendyol-js/react-carousel';
 import Item from "../components/CardRating";
 import Footer from "../components/Footer"
 
+import { InlineWidget } from "react-calendly";
+
 export default function Home() {
   const form = useRef();
 
@@ -129,6 +131,7 @@ export default function Home() {
             <img src="/mockupServices.svg" alt="Mockup Services" />
           </ImageServices>
       </Services>
+
       <CardServicesGroup>
         <Cards>
           <CardServices icon="/linkbuilding.svg" title="Link Building" text="Unlock the best Link-building opportunities. Our team works to obtain the best conditions for your backlinks, and guarantees an assertive reach, regardless of country or niche." />
@@ -141,14 +144,16 @@ export default function Home() {
       </CardServicesGroup>
 
       <Meeting ref={meeting}>
-        <TagTitle text="Meeting" />
 
         <TextMeeting>
-          <TitlePage>
-            <h1>Want to know more? <Markup>Lets meet.</Markup></h1>
-            <h5>Take control over your business with comprehensive management tools. Work as a team by adding team members, create new projects and manage budgets with project spendings insights.</h5>
-          </TitlePage>
+            <TagTitle text="Meeting" />
+
+            <TitlePage>
+              <h1>Want to know more? <Markup>Let{"'"}s meet.</Markup></h1>
+              <h5>Take control over your business with comprehensive management tools. Work as a team by adding team members, create new projects and manage budgets with project spendings insights.</h5>
+            </TitlePage>
         </TextMeeting>
+        <InlineWidget url="https://calendly.com/llindsiepe/meeting" />
       </Meeting>
 
       <Rating>

@@ -24,12 +24,20 @@ export const Container = styled.div`
     width: 32rem;
 
     margin-top: -1rem;
+
+    @media (max-width: 720px) {
+      width: 26rem;
+    }
   }
 `;
 
 export const Title = styled.div`
   display: flex;
   gap: 2rem;
+
+  @media (max-width: 720px) {
+    gap: 0.5rem;
+  }
 `;
 
 export const TagServices = styled.div`

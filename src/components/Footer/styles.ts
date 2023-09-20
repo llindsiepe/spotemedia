@@ -58,11 +58,20 @@ export const Line = styled.div`
 export const OptionsFooter = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 720px) {
+    display: inline-block;
+  }
 `;
 
 export const Options = styled.div`
   display: flex;
   gap: 12rem;
+
+  @media (max-width: 720px) {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
 `;
 
 export const About = styled.div`
