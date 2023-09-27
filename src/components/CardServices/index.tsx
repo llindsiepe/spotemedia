@@ -22,8 +22,8 @@ export default function CardServices(props: {icon: any, title: string, text: str
     setCurrentAccordion,
     setBodyHeight,
     bodyHeight
-  }) =>
-    accordionContent.map(({ title, previous, bulletOne, bulletTwo, bulletThree, bulletFour }, i) => (
+  }: any) =>
+    accordionContent.map(({ title, previous, bulletOne, bulletTwo, bulletThree, bulletFour } : any, i : any) => (
       <AccordionItem key={`accordion-item-${i}`}>
         <AccordionTitle
           onClick={() => {

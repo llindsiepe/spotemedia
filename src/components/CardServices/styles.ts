@@ -109,7 +109,7 @@ export const AccordionBody = styled.div`
   overflow: hidden;
   transition: height 0.3s;
 
-  ${({ active, bodyHeight }) =>
+  ${({ active, bodyHeight }: any) =>
     active &&
     css`
       height: ${bodyHeight}px;
