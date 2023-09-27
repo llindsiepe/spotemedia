@@ -1,5 +1,10 @@
 import styled, { css } from "styled-components";
 
+export interface Props {
+  active: any;
+  bodyHeight: any;
+}
+
 export const Container = styled.div`
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -100,7 +105,7 @@ export const AccordionTitle = styled.div`
   }
 `;
 
-export const AccordionBody = styled.div`
+export const AccordionBody = styled.div<Props>`
   display: block;
   position: relative;
   padding: 0;
