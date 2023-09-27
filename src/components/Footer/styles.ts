@@ -85,6 +85,7 @@ export const About = styled.div`
 
 export const ServicesAnchors = styled.div`
   width: 8rem;
+
   h5 {
     color: #373737;
     font-family: Montserrat;

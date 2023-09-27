@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 import Header from "../components/Header";
 import TagTitle from "../components/TagTitle";
-import { Container, BannerHome, TextBanner, TitlePage, Markup, OptionsBanner, ButtonCTA, ButtonSecondary, ImageBanner, BannerData, DataInfo, Functions, TextFunctions, Services, TextServices, ImageServices, CardServicesGroup, Cards, Meeting, TextMeeting, Rating, TextRating, Talking, FormsTalking, TextTalking } from "../styles/Home";
+import { Container, BannerHome, TextBanner, TitlePage, Markup, OptionsBanner, ButtonCTA, ButtonSecondary, ImageBanner, BannerData, DataInfo, Functions, TextFunctions, Services, TextServices, ImageServices, CardServicesGroup, Cards, Meeting, TextMeeting, Rating, TextRating, Talking, FormsTalking, TextTalking, BackgroundBanner } from "../styles/Home";
 import CardServices from "../components/CardServices";
 import { Carousel } from '@trendyol-js/react-carousel';
 import Item from "../components/CardRating";
@@ -29,10 +29,10 @@ export default function Home() {
 
     emailjs
       .sendForm(
-        "service_zfni4hk",
-        "template_33ke8bu",
+        "service_p1j2pzm",
+        "service_p1j2pzm",
         e.target,
-        "oub8mQLFGeaI--IMP"
+        "tqBBBeZ4PrQH8FVbY"
       )
       .then(
         (result) => {
@@ -46,6 +46,7 @@ export default function Home() {
       );
       e.target.reset()
   };
+
 
   return (
     <Container>
@@ -74,6 +75,10 @@ export default function Home() {
           <img src="/mockupBanner.svg" alt="Mockup System" />
         </ImageBanner>
       </BannerHome>
+      {/* <BackgroundBanner>
+        <img src="/sidebar.png" />
+      </BackgroundBanner> */}
+
 
       <BannerData>
         <DataInfo>
@@ -134,12 +139,28 @@ export default function Home() {
 
       <CardServicesGroup>
         <Cards>
-          <CardServices icon="/linkbuilding.svg" title="Link Building" text="Unlock the best Link-building opportunities. Our team works to obtain the best conditions for your backlinks, and guarantees an assertive reach, regardless of country or niche." />
-          <CardServices icon="/contentmarketing.svg" title="Content Marketing" text="We focus on creating and distributing valuable content to attract and retain a defined audience and drive profitable customer action." />
+          <CardServices icon="/linkbuilding.svg" title="Link Building" text="Unlock the best Link-building opportunities. Our team works to obtain the best conditions for your backlinks, and guarantees an assertive reach, regardless of country or niche." 
+            bulletOne="Strategic outreach:  We identify relevant & authority sites in your niche, establishing mutually beneficial partnerships to acquire quality backlinks."
+            bulletTwo="Content creation:  We develop high-quality content that naturally integrates backlinks, on reputable sites to increase your brand's visibility."
+            bulletThree="Competitor analysis: Track your competitor's backlink profiles to discover valuable opportunities, ensuring that your link building strategy remains competitive & effective."
+            bulletFour="Performance tracking:  Monitor the impact of the backlinks you acquire on your site's search engine rankings and organic traffic, optimising your campaign for maximum results." />
+          <CardServices icon="/contentmarketing.svg" title="Content Marketing" text="We focus on creating and distributing valuable content to attract and retain a defined audience and drive profitable customer action."
+            bulletOne="Strategic planning:  We develop a content strategy for your target audience, ensuring that each piece aligns with your brand's goals and values."
+            bulletTwo="Content creation:  We create diverse, high-quality content such as articles, infographics, banners, ads & much more in + 15 languages."
+            bulletThree="SEO Optimisation:  Incorporate strategic keywords & recommended natural topics to increase the visibility of your content."
+            bulletFour="Audience research:  We monitor the content created to understand the pain points & behaviour of your audience, allowing to create content that really resonates." />
         </Cards>
         <Cards>
-          <CardServices icon="/brandawareness.svg" title="Brand Awareness" text="We make it possible to select the best opportunities to achieve your goals. We analyze your audience, negotiate powerful partnerships, and make your brand a household name in your industry." />
-          <CardServices icon="/pressrelations.svg" title="Press Relations" text="We create relevant, creative and targeted content, attracting the attention of the media and your target audience, thus placing your brand in the spotlight." />
+          <CardServices icon="/brandawareness.svg" title="Brand Awareness" text="We make it possible to select the best opportunities to achieve your goals. We analyze your audience, negotiate powerful partnerships, and make your brand a household name in your industry."
+            bulletOne="Notoriety & Visibility: Reach your audience with PR/Outreach campaigns expanding across diverse platforms."
+            bulletTwo="Time: Save time & we negotiate it faster."
+            bulletThree="Pinpointing: Optimal opportunities aligned with your goals."
+            bulletFour="Familiar Connection: Create strong bond between your Logo, brand's name, & what it represents in people's minds." />
+          <CardServices icon="/pressrelations.svg" title="Press Relations" text="We create relevant, creative and targeted content, attracting the attention of the media and your target audience, thus placing your brand in the spotlight."
+            bulletOne="Influencer engagement:  We get the key influencers in your sector to amplify and reach a wider audience."
+            bulletTwo="Content creation:  We develop attractive & relevant content, including PR, articles and multimedia materials."
+            bulletThree="Brand monitoring:  We keep an eye on online conversations & news coverage related to your brand, allowing for timely reactions and engagement."
+            bulletFour="Measurement : Whether it's a Unicorn or React campaign we track the impact of your PR efforts through metrics and analyses, providing valuable insights into campaign success and informing future strategies." />
         </Cards>
       </CardServicesGroup>
 
@@ -153,7 +174,7 @@ export default function Home() {
               <h5>Take control over your business with comprehensive management tools. Work as a team by adding team members, create new projects and manage budgets with project spendings insights.</h5>
             </TitlePage>
         </TextMeeting>
-        <InlineWidget url="https://calendly.com/llindsiepe/meeting" />
+        <InlineWidget url="https://calendly.com/spotemedia/meet" />
       </Meeting>
 
       <Rating>

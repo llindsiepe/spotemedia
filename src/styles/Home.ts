@@ -17,6 +17,10 @@ export const BannerHome = styled.div`
   }
 `;
 
+export const BackgroundBanner = styled.div`
+  margin-left: rem;
+`;
+
 export const TextBanner = styled.div`
   width: 22rem;
   margin-top: 8rem;

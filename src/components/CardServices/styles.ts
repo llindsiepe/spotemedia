@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   margin-top: 2rem;
   margin-bottom: 2rem;
+  position: relative;
 
   img {
     width: 2.6rem;
@@ -57,6 +58,83 @@ export const TagServices = styled.div`
     font-family: Montserrat;
     font-weight: 600;
     margin: auto;
-    padding: 0.3rem 0.5rem 0rem 0.8rem;
+    padding: 0 0 0rem 0.9rem;
+  }
+`;
+
+export const Section = styled.section`
+  position: relative;
+`;
+
+export const InnerSection = styled.div`
+  position: relative;
+  max-width: 500px;
+`;
+
+export const AccordionContainer = styled.div``;
+
+export const AccordionInner = styled.div`
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+`;
+
+export const AccordionItem = styled.div`
+  &:not(:last-child) {
+    border-bottom: 1px solid black;
+  }
+`;
+
+export const AccordionTitle = styled.div`
+  margin: 0;
+  cursor: pointer;
+
+  div {
+    display: flex;
+    gap: 2rem;
+  }
+
+  h5 {
+    width: 28rem;
+    color: #373737;
+  }
+`;
+
+export const AccordionBody = styled.div`
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+
+  ${({ active, bodyHeight }) =>
+    active &&
+    css`
+      height: ${bodyHeight}px;
+    `}
+`;
+
+export const AccordionContent = styled.div`
+  margin: 0;
+  padding: 0 1rem 2rem;
+  height: auto;
+
+  h4 {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: rgba(55, 55, 55, 0.6);
+  }
+
+  button {
+    border: none;
+    border-bottom: 0.16rem solid #a58ff7;
+    background: none;
+
+    font-family: Montserrat;
+    cursor: pointer;
+    font-weight: 500;
+    color: #a58ff7;
   }
 `;
