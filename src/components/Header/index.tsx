@@ -1,7 +1,7 @@
 import { Container, Organize, OptionsMenu, ButtonLogin } from "./styles";
 
 import { useTranslation } from 'react-i18next';
-import "../../pages/i18n";
+import "../traduce/i18n";
 
 export default function Header( props: {handleClickAnchor: any, about: any, services: any, meeting: any, contact: any} ) {
   const {t, i18n} = useTranslation();

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 
 import { useTranslation } from 'react-i18next';
-import "./i18n";
+import "../components/traduce/i18n";
 
 import Header from "../components/Header";
 import TagTitle from "../components/TagTitle";

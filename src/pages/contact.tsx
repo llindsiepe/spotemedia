@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import "./i18n";
+import "../components/traduce/i18n";
 
 export default function Contact() {
     const {t, i18n} = useTranslation();
