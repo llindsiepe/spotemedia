@@ -1,6 +1,11 @@
 import { Container, Organize, OptionsMenu, ButtonLogin } from "./styles";
 
+import { useTranslation } from 'react-i18next';
+import "../../pages/i18n";
+
 export default function Header( props: {handleClickAnchor: any, about: any, services: any, meeting: any, contact: any} ) {
+  const {t, i18n} = useTranslation();
+
   return (
     <Container>
       <Organize>
@@ -8,16 +13,16 @@ export default function Header( props: {handleClickAnchor: any, about: any, serv
 
       <OptionsMenu>
         <button onClick={() => {props.handleClickAnchor(props.about)}}>
-          <h5>About us</h5>
+          <h5>{t('servicesMenu.subtitle1')}</h5>
         </button>
         <button onClick={() => {props.handleClickAnchor(props.services)}}>
-          <h5>Our services</h5>
+          <h5>{t('servicesMenu.subtitle2')}</h5>
         </button>
         <button onClick={() => {props.handleClickAnchor(props.meeting)}}>
-          <h5>Meeting</h5>
+          <h5>{t('servicesMenu.subtitle3')}</h5>
         </button>
         <button onClick={() => {props.handleClickAnchor(props.contact)}}>
-          <h5>Contact</h5>
+          <h5>{t('servicesMenu.subtitle4')}</h5>
         </button>
       </OptionsMenu>
       </Organize>

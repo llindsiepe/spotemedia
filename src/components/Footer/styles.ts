@@ -84,7 +84,7 @@ export const About = styled.div`
 `;
 
 export const ServicesAnchors = styled.div`
-  width: 8rem;
+  width: 12rem;
 
   h5 {
     color: #373737;

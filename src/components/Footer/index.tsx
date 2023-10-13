@@ -1,13 +1,18 @@
 import { Container, ButtonLogin, OptionLogin, Platform, Line, OptionsFooter, About, ServicesAnchors, ContactUs, InfoContact, Options } from "./styles";
 
+import { useTranslation } from 'react-i18next';
+import "../../pages/i18n";
+
 export default function Footer(props: {handleClickAnchor: any, about: any, services: any, meeting: any, contact: any} ) {
+    const {t, i18n} = useTranslation();
+
     return (
       <Container>
         <Platform>
             <img src="/icon.svg" alt="Icon Spotemedia" />
 
             <OptionLogin>
-                <h3>Have an account?</h3>
+                <h3>{t('footer.title')}</h3>
                 <ButtonLogin>
                     <h4>Login</h4>
                 </ButtonLogin>
@@ -16,26 +21,29 @@ export default function Footer(props: {handleClickAnchor: any, about: any, servi
         <Line />
         <OptionsFooter>
             <About>
-                <h5>We are a digital Marketing Agency focused on boosting authority & visibility through strategic link building efforts.
-                <br />We blend accuracy with persuasion to achieve exceptional results for ambitious Brands.</h5>
+                <h5>{t('footerAboutOne.text')}
+                <br />{t('footerAboutTwo.text')}</h5>
                 <a href="https://www.linkedin.com/company/spotemedia-advertising-solution/">
                     <img src="/logoLinkedin.svg" alt="LinkedIn" />
                 </a>
             </About>
             <Options>
                 <ServicesAnchors>
-                    <h5><b>Services</b></h5>
+                    <h5><b>{t('servicesMenu.title')}</b></h5>
                     <button onClick={() => {props.handleClickAnchor(props.about)}}>
-                        <h5>About us</h5>
+                        <h5>{t('servicesMenu.subtitle1')}</h5>
                     </button>
+                    <br />
                     <button onClick={() => {props.handleClickAnchor(props.services)}}>
-                        <h5>Our services</h5>
+                        <h5>{t('servicesMenu.subtitle2')}</h5>
                     </button>
+                    <br />
                     <button onClick={() => {props.handleClickAnchor(props.meeting)}}>
-                        <h5>Meeting</h5>
+                        <h5>{t('servicesMenu.subtitle3')}</h5>
                     </button>
+                    <br />
                     <button onClick={() => {props.handleClickAnchor(props.contact)}}>
-                        <h5>Contact Us</h5>
+                        <h5>{t('servicesMenu.subtitle4')}</h5>
                     </button>
                 </ServicesAnchors>
 

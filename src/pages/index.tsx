@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 
+import { useTranslation } from 'react-i18next';
+import "./i18n";
+
 import Header from "../components/Header";
 import TagTitle from "../components/TagTitle";
 import { Container, BannerHome, TextBanner, TitlePage, Markup, OptionsBanner, ButtonCTA, ButtonSecondary, ImageBanner, BannerData, DataInfo, Functions, TextFunctions, Services, TextServices, ImageServices, CardServicesGroup, Cards, Meeting, TextMeeting, Rating, TextRating, Talking, FormsTalking, TextTalking, BackgroundBanner } from "../styles/Home";
@@ -47,26 +50,35 @@ export default function Home() {
       e.target.reset()
   };
 
+  const {t, i18n} = useTranslation();
+
+    //@ts-ignore
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng)
+    }
+
 
   return (
     <Container>
       <Header handleClickAnchor={handleClickAnchor} about={about} services={services} meeting={meeting} contact={contact} />
 
+      <button onClick={() => changeLanguage('en')}>English</button>
+      <button onClick={() => changeLanguage('pt')}>Portuguese</button>
+      <button onClick={() => changeLanguage('es')}>Spanish</button>
+
       <BannerHome ref={about}>
         <TextBanner>
           <TitlePage>
-            <h1>Opportunities in Digital <b>are <Markup>Boundless.</Markup></b></h1>
-            <h5>
-            We are a digital Marketing Agency focused on boosting authority & visibility through strategic link building efforts. <br/>
-            We usually blend accuracy with persuasion to achieve exceptional results for ambitious brands.</h5>
+            <h1>{t('bannerOne.title')}<b>{t('bannerTwo.title')} <Markup>{t('bannerThree.title')}</Markup></b></h1>
+            <h5>{t('titlepage.text')}</h5>
           </TitlePage>
           <OptionsBanner>
             <ButtonCTA onClick={() => {handleClickAnchor(meeting)}}>
-              <h5>Schedule a meeting</h5>
+              <h5>{t('buttoncta.text')}</h5>
               <img src="/arrow.svg" alt="skip" />
             </ButtonCTA>
             <ButtonSecondary onClick={() => {handleClickAnchor(contact)}}>
-              <h5>Contact us</h5>
+              <h5>{t('buttonsecondary.text')}</h5>
             </ButtonSecondary>
           </OptionsBanner>
         </TextBanner>
@@ -75,29 +87,26 @@ export default function Home() {
           <img src="/mockupBanner.svg" alt="Mockup System" />
         </ImageBanner>
       </BannerHome>
-      {/* <BackgroundBanner>
-        <img src="/sidebar.png" />
-      </BackgroundBanner> */}
 
 
       <BannerData>
         <DataInfo>
-          <h1><b>+</b>30mil</h1>
-          <h5>Partner Domains</h5>
+          <h1><b>+</b>30.000</h1>
+          <h5>{t('datainfo-one.text')}</h5>
         </DataInfo>
 
         <img src="/line.svg" alt="Line" />
 
         <DataInfo>
-          <h1><b>+</b>50mil</h1>
-          <h5>Generated Traffic</h5>
+          <h1><b>+</b>50.000</h1>
+          <h5>{t('datainfo-two.text')}</h5>
         </DataInfo>
 
         <img src="/line.svg" alt="Line" />
 
         <DataInfo>
-          <h1><b>+</b>2mil</h1>
-          <h5>Delivered Content</h5>
+          <h1><b>+</b>2.000</h1>
+          <h5>{t('datainfo-three.text')}</h5>
         </DataInfo>
       </BannerData>
 
@@ -110,10 +119,10 @@ export default function Home() {
           <TagTitle text="Functions" />
 
           <TitlePage>
-            <h1>Take <b>full control.</b></h1>
-            <h5>Take control over your business with comprehensive management tools. Work as a team by adding team members, create new projects and manage budgets with project spendings insights.</h5>
+            <h1>{t('functionsOne.title')} <b>{t('functionsTwo.title')}</b></h1>
+            <h5>{t('functions.text')}</h5>
 
-            <h3>Integration with the main SEO Tools</h3>
+            <h3>{t('functions.subtitle')}</h3>
 
             <img src="/SEOTools.png" alt="SEO Tools" />
           </TitlePage>
@@ -125,10 +134,8 @@ export default function Home() {
             <TagTitle text="Services" />
 
             <TitlePage>
-              <h1>Services for you</h1>
-              <h5>With our experts who execute very well SEO operations and advertising strategies, texts that convert, fast pages, ranking goals, high quality backlinks & what really matters: <br/>
-                An exclusive team capable of increasing organic and paid traffic while bringing conversions on your website that will be essential to increase your business.
-              </h5>
+              <h1>{t('services.title')}</h1>
+              <h5>{t('services.text')}</h5>
             </TitlePage>
           </TextServices>
           
@@ -170,8 +177,8 @@ export default function Home() {
             <TagTitle text="Meeting" />
 
             <TitlePage>
-              <h1>Want to know more? <Markup>Let{"'"}s meet.</Markup></h1>
-              <h5>Take control over your business with comprehensive management tools. Work as a team by adding team members, create new projects and manage budgets with project spendings insights.</h5>
+              <h1>{t('meetingOne.title')}<Markup>{t('meetingTwo.title')}</Markup></h1>
+              <h5>{t('meeting.text')}</h5>
             </TitlePage>
         </TextMeeting>
         <InlineWidget url="https://calendly.com/spotemedia/meet" />
@@ -180,7 +187,7 @@ export default function Home() {
       <Rating>
         <TextRating>
           <TitlePage>
-            <h1>See what others <Markup>are saying.</Markup></h1>
+            <h1>{t('ratingOne.title')}<Markup>{t('ratingTwo.title')}</Markup></h1>
           </TitlePage>
         </TextRating>
 
@@ -194,9 +201,9 @@ export default function Home() {
 
       <Talking ref={contact}>
         <TextTalking>
-          <h1><b>Let{"'"}s talk</b> about your business!</h1>
-          <h5>We offer solutions for your business, exploring possibilities and creating opportunities.
-            <br/>Let{"'"}s talk about your brand!</h5>
+          <h1><b>{t('talkingOne.title')}</b>{t('talkingTwo.title')}</h1>
+          <h5>{t('talkingOne.text')}
+            <br/>{t('talkingTwo.text')}</h5>
         </TextTalking>
 
         <FormsTalking onSubmit={sendEmail}>
