@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+import portuguese from "../../../public/Portuguese.png";
+import spanish from "../../../public/Spanish.png";
+import english from "../../../public/USA.png";
+
 export const Container = styled.div`
   margin: 2rem;
   justify-content: space-between;
@@ -46,38 +50,99 @@ export const OptionsMenu = styled.div`
   }
 `;
 
+export const Options = styled.div`
+  display: flex;
+  gap: 2rem;
+
+  @media (max-width: 720px) {
+    gap: 1rem;
+  }
+`;
+
 export const ButtonLogin = styled.button`
   height: 2rem;
   width: 8rem;
   border-radius: 20px;
   border-color: transparent;
-  background: #fff;
+  background: #23194a;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: auto;
+  margin-bottom: auto;
 
   h4 {
-    color: #a58ff7;
+    color: white;
     font-weight: 700;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
     font-family: Montserrat;
-
-    @media (max-width: 720px) {
-      color: #fff;
-    }
   }
 
   &:hover {
-    background: #23194a;
-    transition: 1s;
     cursor: pointer;
+  }
 
-    h4 {
-      color: white;
+  @media (max-width: 720px) {
+    width: 6rem;
+  }
+`;
+
+export const Translate = styled.div`
+  display: flex;
+  gap: 1rem;
+
+  margin-top: auto;
+  margin-bottom: auto;
+
+  button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @media (max-width: 720px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  #english {
+    background-image: url(${english.src});
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+    @media (max-width: 720px) {
+      background-size: 20px 20px;
+    }
+  }
+
+  #portuguese {
+    background-image: url(${portuguese.src});
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+    @media (max-width: 720px) {
+      background-size: 20px 20px;
+    }
+  }
+
+  #spanish {
+    background-image: url(${spanish.src});
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+    @media (max-width: 720px) {
+      background-size: 20px 20px;
     }
   }
 
   @media (max-width: 720px) {
-    background: #23194a;
+    gap: 0.5rem;
   }
 `;

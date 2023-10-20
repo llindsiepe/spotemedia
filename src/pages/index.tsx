@@ -60,11 +60,7 @@ export default function Home() {
 
   return (
     <Container>
-      <Header handleClickAnchor={handleClickAnchor} about={about} services={services} meeting={meeting} contact={contact} />
-
-      <button onClick={() => changeLanguage('en')}>English</button>
-      <button onClick={() => changeLanguage('pt')}>Portuguese</button>
-      <button onClick={() => changeLanguage('es')}>Spanish</button>
+      <Header handleClickAnchor={handleClickAnchor} about={about} services={services} meeting={meeting} contact={contact} onClickEnglish={() => changeLanguage('en')} onClickPortuguese={() => changeLanguage('pt')} onClickSpanish={() => changeLanguage('es')} />
 
       <BannerHome ref={about}>
         <TextBanner>
@@ -116,7 +112,7 @@ export default function Home() {
         </ImageBanner>
 
         <TextFunctions>
-          <TagTitle text="Functions" />
+          <TagTitle text={t('tagtitle.functions')} />
 
           <TitlePage>
             <h1>{t('functionsOne.title')} <b>{t('functionsTwo.title')}</b></h1>
@@ -131,7 +127,7 @@ export default function Home() {
 
       <Services ref={services}>
           <TextServices>
-            <TagTitle text="Services" />
+            <TagTitle text={t('tagtitle.services')} />
 
             <TitlePage>
               <h1>{t('services.title')}</h1>
@@ -146,35 +142,35 @@ export default function Home() {
 
       <CardServicesGroup>
         <Cards>
-          <CardServices icon="/linkbuilding.svg" title="Link Building" text="Unlock the best Link-building opportunities. Our team works to obtain the best conditions for your backlinks, and guarantees an assertive reach, regardless of country or niche." 
-            bulletOne="Strategic outreach:  We identify relevant & authority sites in your niche, establishing mutually beneficial partnerships to acquire quality backlinks."
-            bulletTwo="Content creation:  We develop high-quality content that naturally integrates backlinks, on reputable sites to increase your brand's visibility."
-            bulletThree="Competitor analysis: Track your competitor's backlink profiles to discover valuable opportunities, ensuring that your link building strategy remains competitive & effective."
-            bulletFour="Performance tracking:  Monitor the impact of the backlinks you acquire on your site's search engine rankings and organic traffic, optimising your campaign for maximum results." />
-          <CardServices icon="/contentmarketing.svg" title="Content Marketing" text="We focus on creating and distributing valuable content to attract and retain a defined audience and drive profitable customer action."
-            bulletOne="Strategic planning:  We develop a content strategy for your target audience, ensuring that each piece aligns with your brand's goals and values."
-            bulletTwo="Content creation:  We create diverse, high-quality content such as articles, infographics, banners, ads & much more in + 15 languages."
-            bulletThree="SEO Optimisation:  Incorporate strategic keywords & recommended natural topics to increase the visibility of your content."
-            bulletFour="Audience research:  We monitor the content created to understand the pain points & behaviour of your audience, allowing to create content that really resonates." />
+          <CardServices icon="/linkbuilding.svg" title={t('Card-service-one.title')} text={t('Card-service-one.text')}
+            bulletOne={t('Card-service-one.text-one')}
+            bulletTwo={t('Card-service-one.text-two')}
+            bulletThree={t('Card-service-one.text-three')}
+            bulletFour={t('Card-service-one.text-four')} />
+          <CardServices icon="/contentmarketing.svg" title={t('Card-service-two.title')} text={t('Card-service-two.text')}
+            bulletOne={t('Card-service-two.text-one')}
+            bulletTwo={t('Card-service-two.text-two')}
+            bulletThree={t('Card-service-two.text-three')}
+            bulletFour={t('Card-service-two.text-four')} />
         </Cards>
         <Cards>
-          <CardServices icon="/brandawareness.svg" title="Brand Awareness" text="We make it possible to select the best opportunities to achieve your goals. We analyze your audience, negotiate powerful partnerships, and make your brand a household name in your industry."
-            bulletOne="Notoriety & Visibility: Reach your audience with PR/Outreach campaigns expanding across diverse platforms."
-            bulletTwo="Time: Save time & we negotiate it faster."
-            bulletThree="Pinpointing: Optimal opportunities aligned with your goals."
-            bulletFour="Familiar Connection: Create strong bond between your Logo, brand's name, & what it represents in people's minds." />
-          <CardServices icon="/pressrelations.svg" title="Press Relations" text="We create relevant, creative and targeted content, attracting the attention of the media and your target audience, thus placing your brand in the spotlight."
-            bulletOne="Influencer engagement:  We get the key influencers in your sector to amplify and reach a wider audience."
-            bulletTwo="Content creation:  We develop attractive & relevant content, including PR, articles and multimedia materials."
-            bulletThree="Brand monitoring:  We keep an eye on online conversations & news coverage related to your brand, allowing for timely reactions and engagement."
-            bulletFour="Measurement : Whether it's a Unicorn or React campaign we track the impact of your PR efforts through metrics and analyses, providing valuable insights into campaign success and informing future strategies." />
+          <CardServices icon="/brandawareness.svg" title={t('Card-service-three.title')} text={t('Card-service-three.text')}
+            bulletOne={t('Card-service-three.text-one')}
+            bulletTwo={t('Card-service-three.text-two')}
+            bulletThree={t('Card-service-three.text-three')}
+            bulletFour={t('Card-service-three.text-four')} />
+          <CardServices icon="/pressrelations.svg" title={t('Card-service-four.title')} text={t('Card-service-four.text')}
+            bulletOne={t('Card-service-four.text-one')}
+            bulletTwo={t('Card-service-four.text-two')}
+            bulletThree={t('Card-service-four.text-three')}
+            bulletFour={t('Card-service-four.text-four')} />
         </Cards>
       </CardServicesGroup>
 
       <Meeting ref={meeting}>
 
         <TextMeeting>
-            <TagTitle text="Meeting" />
+            <TagTitle text={t('tagtitle.meeting')} />
 
             <TitlePage>
               <h1>{t('meetingOne.title')}<Markup>{t('meetingTwo.title')}</Markup></h1>

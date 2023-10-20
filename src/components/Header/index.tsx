@@ -1,9 +1,9 @@
-import { Container, Organize, OptionsMenu, ButtonLogin } from "./styles";
+import { Container, Organize, OptionsMenu, ButtonLogin, Translate, Options } from "./styles";
 
 import { useTranslation } from 'react-i18next';
 import "../traduce/i18n";
 
-export default function Header( props: {handleClickAnchor: any, about: any, services: any, meeting: any, contact: any} ) {
+export default function Header( props: {handleClickAnchor: any, about: any, services: any, meeting: any, contact: any, onClickEnglish: any, onClickPortuguese: any, onClickSpanish: any} ) {
   const {t, i18n} = useTranslation();
 
   return (
@@ -27,9 +27,17 @@ export default function Header( props: {handleClickAnchor: any, about: any, serv
       </OptionsMenu>
       </Organize>
 
-      <ButtonLogin>
-        <h4>Login</h4>
-      </ButtonLogin>
+      <Options>
+        <Translate>
+          <button id="english" onClick={props.onClickEnglish}/>
+          <button id="portuguese" onClick={props.onClickPortuguese}/>
+          <button id="spanish" onClick={props.onClickSpanish}/>
+        </Translate>
+
+        <ButtonLogin>
+          <h4>Login</h4>
+        </ButtonLogin>
+      </Options>
     </Container>
   );
 }

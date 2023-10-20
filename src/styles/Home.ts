@@ -314,7 +314,7 @@ export const TextTalking = styled.div`
     font-weight: 500;
     font-size: 3.6rem;
 
-    width: 32rem;
+    width: 36rem;
 
     @media (max-width: 720px) {
       font-size: 3rem;

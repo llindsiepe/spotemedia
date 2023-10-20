@@ -22,7 +22,7 @@
     "ratingOne.title": "Vea lo que ",
     "ratingTwo.title": "dicen los demás.",
     "talkingOne.title": "Hablemos ",
-    "talkingTwo.title": "de su negocio",
+    "talkingTwo.title": "de su negocio!",
     "talkingOne.text": "Ofrecemos soluciones personalizadas para su negocio, explorando posibilidades y creando oportunidades.",
     "talkingTwo.text": "Hablemos de su marca!",
 
@@ -33,6 +33,40 @@
     "servicesMenu.subtitle1": "Quiénes somos",
     "servicesMenu.subtitle2": "Nuestros servicios",
     "servicesMenu.subtitle3": "Reunión",
-    "servicesMenu.subtitle4": "Contacto"
+    "servicesMenu.subtitle4": "Contacto",
+
+    "Card-service-one.title": "LinkBuilding",
+    "Card-service-one.text": "Desbloquee las mejores oportunidades de link-building. Nuestro equipo trabaja para obtener las mejores condiciones para sus backlinks, y garantiza un alcance asertivo, independientemente del país o nicho.",
+    "Card-service-one.text-one": "Alcance estratégico: Identificamos sitios relevantes y de autoridad en su nicho, estableciendo asociaciones mutuamente beneficiosas para adquirir backlinks de calidad.",
+    "Card-service-one.text-two": "Creación de contenido: Desarrollamos contenido de alta calidad que integra backlinks de forma natural, en sitios de renombre para aumentar la visibilidad de tu marca.",
+    "Card-service-one.text-three": "Análisis de la competencia: Realice un seguimiento de los perfiles de backlinks de sus competidores para descubrir oportunidades valiosas, asegurándose de que su estrategia de construcción de enlaces siga siendo competitiva y efectiva.",
+    "Card-service-one.text-four": "Seguimiento del rendimiento: Supervisa el impacto de los backlinks que adquieres en el posicionamiento de tu sitio en los motores de búsqueda y en el tráfico orgánico, optimizando tu campaña para obtener los máximos resultados.",
+
+
+    "Card-service-two.title": "Marketing de contenidos",
+    "Card-service-two.text": "Nos centramos en crear y distribuir contenidos valiosos para atraer y retener a una audiencia definida e impulsar la acción rentable de los clientes.",
+    "Card-service-two.text-one": "Planificación estratégica: Desarrollamos una estrategia de contenido para tu público objetivo, asegurándonos de que cada pieza se alinee con los objetivos y valores de tu marca.",
+    "Card-service-two.text-two": "Creación de contenido: Creamos contenido diverso y de alta calidad, como artículos, infografías, banners, anuncios y mucho más en + 15 idiomas.",
+    "Card-service-two.text-three": "Optimización SEO: Incorpora palabras clave estratégicas y temas naturales recomendados para aumentar la visibilidad de tu contenido.",
+    "Card-service-two.text-four": "Investigación de audiencias: Monitoreamos el contenido creado para comprender los puntos débiles y el comportamiento de su audiencia, lo que permite crear contenido que realmente resuene.",
+
+
+    "Card-service-three.title": "Conciencia de marca",
+    "Card-service-three.text": "Facilitamos la identificación de las oportunidades más adecuadas para lograr sus objetivos. Analizamos su audiencia, negociamos potentes alianzas y convertimos su marca en un nombre propio del sector.",
+    "Card-service-three.text-one": "Notoriedad y visibilidad: Llega a tu audiencia con campañas de relaciones públicas y divulgación que se expanden a través de diversas plataformas.",
+    "Card-service-three.text-two": "Tiempo: Ahorre tiempo y lo negociaremos más rápido.",
+    "Card-service-three.text-three": "Identificación: Oportunidades óptimas alineadas con sus objetivos.",
+    "Card-service-three.text-four": "Conexión familiar: Crea un fuerte vínculo entre tu logotipo, el nombre de la marca y lo que representa en la mente de las personas.",
+
+    "Card-service-four.title": "Relaciones con la prensa",
+    "Card-service-four.text": "Creamos contenidos relevantes, creativos y específicos que atraen la atención de los medios de comunicación y de su público objetivo, situando así su marca en el punto de mira.",
+    "Card-service-four.text-one": "Influencer engagement: Conseguimos que los influencers clave de tu sector amplifiquen y lleguen a un público más amplio.",
+    "Card-service-four.text-two": "Creación de contenido: Desarrollamos contenido atractivo y relevante, incluyendo relaciones públicas, artículos y materiales multimedia.",
+    "Card-service-four.text-three": "Monitoreo de marca: Estamos atentos a las conversaciones en línea y la cobertura de noticias relacionadas con su marca, lo que permite reacciones y participación oportunas.",
+    "Card-service-four.text-four": "Medición: Ya sea que se trate de una campaña de Unicornio o React, rastreamos el impacto de sus esfuerzos de relaciones públicas a través de métricas y análisis, brindando información valiosa sobre el éxito de la campaña e informando estrategias futuras.",
+
+    "tagtitle.functions": "Funciones",
+    "tagtitle.services": "Servicios",
+    "tagtitle.meeting": "Reunión"
 
 }
